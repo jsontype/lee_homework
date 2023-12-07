@@ -1,5 +1,5 @@
 import React from "react";
-import "./Top.css";
+import "./Top.scss";
 
 type TopProps = {
   isMovies: boolean;

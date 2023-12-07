@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./Todos.css";
+import "./Todos.scss";
 
 type TodosProps = {
   id: number;

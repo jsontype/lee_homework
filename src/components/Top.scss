@@ -1,3 +1,5 @@
+@import "styles/resources.scss";
+
 .navbar {
   display: flex;
 }
@@ -7,9 +9,9 @@
 }
 
 .menu:hover {
-  color: pink;
+  color: $hotpink;
 }
 
 .menu:active {
-  color: white;
+  color: $purple;
 }
