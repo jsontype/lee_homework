@@ -11,6 +11,7 @@ type NewsProps = {
 
 export default function News() {
   const [news, setNews] = useState([]);
+  // 어떤 작업 끝.
 
   useEffect(() => {
     // fetch('https://yts.mx/api/v2/list_movies.json?sort_by=rating')
