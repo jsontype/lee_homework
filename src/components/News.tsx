@@ -39,7 +39,7 @@ export default function News() {
 
   return (
     <>
-      <h1>News App</h1>
+      <h1>News 앱</h1>
       <div>{render()}</div>
     </>
   );
