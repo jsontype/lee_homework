@@ -30,7 +30,7 @@ export default function Top({
     onReset();
     setIsTodos(true);
   };
-
+  // TODO: 라우터 기능으로 변경
   const onReset = () => {
     setIsMovies(false);
     setIsNews(false);
