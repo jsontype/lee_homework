@@ -13,11 +13,9 @@ export default function News() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    // fetch('https://yts.mx/api/v2/list_movies.json?sort_by=rating')
     fetch("https://api.hnpwa.com/v0/news.json")
       .then((res) => res.json())
       .then((json) => setNews(json));
-    // .then(json => setNews(json))
   }, []);
 
   const render = () => {
@@ -39,7 +37,7 @@ export default function News() {
 
   return (
     <>
-      <h1>News 앱</h1>
+      <h1>News App</h1>
       <div>{render()}</div>
     </>
   );
