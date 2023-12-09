@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
-import "./Movies.css";
+import styles from "./Movies.module.scss";
 
 type TorrentsProps = {
   url: string;
@@ -38,27 +38,27 @@ export default function Movies() {
     console.log("movies: ", movies);
     return movies.map((item: MoviesProps) => {
       return (
-        <div key={item.id} className="movieContainer">
-          <a className="movieTitle" href={item.url}>
+        <div key={item.id} className={styles.movieContainer}>
+          <a className={styles.movieTitle} href={item.url}>
             {item.title} ({item.year}) {item.rating >= 9 && "🔥"}
           </a>
-          <div className="movieDetail">
+          <div className={styles.movieDetail}>
             <img
-              className="movieImage"
+              className={styles.movieImage}
               src={item.large_cover_image}
               alt={item.title}
             />
-            <div className="movieDescription">
+            <div className={styles.movieDescription}>
               <div
                 className={
                   item.rating >= 9
-                    ? "good"
+                    ? styles.good
                     : item.rating >= 7
-                    ? "notBad"
-                    : "bad"
+                    ? styles.notBad
+                    : styles.bad
                 }
               >
-                평점: {item.rating ? item.rating + "/ 10점" : "정보없음"}{" "}
+                평점: {item.rating ? item.rating + " / 10점" : "정보없음"}{" "}
               </div>
               <div>장르 : {item.genres && item.genres.join(", ")}</div>
               <div>

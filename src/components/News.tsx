@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./News.css";
+import styles from "./News.module.scss";
 
 type NewsProps = {
   id: number;
@@ -26,7 +26,7 @@ export default function News() {
       return (
         <div key={item.id}>
           <div>
-            <a className="newsTitle" href={item.url}>
+            <a className={styles.newsTitle} href={item.url}>
               {item.title}
             </a>
             <span> / {item.time_ago}</span>

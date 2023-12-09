@@ -1,0 +1,21 @@
+@import "styles/resources.scss";
+
+@mixin a-color($color) {
+  text-decoration: none;
+  // 기본 gray색으로 지정
+  color: $gray;
+  // hover했을때부터 색이 $color로 지정한 색으로 변함
+  &:hover {
+    color: lighten($color, 10%);
+  }
+  &:active {
+    color: darken($color, 20%);
+  }
+}
+
+
+.newsTitle {
+  @include a-color($hotpink);
+}
+
+

@@ -1,10 +1,12 @@
+@import "styles/resources.scss";
+
 .todoContent {
   
 }
 
 .trueDone {
   text-decoration: line-through;
-  color: red;
+  color: $gray;
 }
 
 .falseDone {

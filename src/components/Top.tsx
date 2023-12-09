@@ -1,5 +1,5 @@
 import React from "react";
-import "./Top.css";
+import "./Top.scss";
 
 type TopProps = {
   isMovies: boolean;
@@ -30,7 +30,7 @@ export default function Top({
     onReset();
     setIsTodos(true);
   };
-
+  // TODO: 라우터 기능으로 변경
   const onReset = () => {
     setIsMovies(false);
     setIsNews(false);
